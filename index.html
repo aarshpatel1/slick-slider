@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+
+  <!-- font awesome cdn link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- slick css link -->
+  <link rel="stylesheet" href="assets/css/slick.css">
+
+  <!-- slick theme css link -->
+  <link rel="stylesheet" href="assets/css/slick-theme.css">
+
+  <!-- media query link -->
+  <link rel="stylesheet" href="assets/css/media.css">
+
+  <!-- css link -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+  <div class="more-pens d-flex f-wrap align-center">
+    <div class="container">
+      <!-- <div class="main-title">
+      <h1>Aarsh Car Collection</h1>
+    </div> -->
+      <div class="sliding">
+        <div class="car-img">
+          <img src="assets/images/1.jpg" alt="car image 1">
+        </div>
+        <div class="car-img">
+          <img src="assets/images/2.jpg" alt="car image 2">
+        </div>
+        <div class="car-img">
+          <img src="assets/images/3.jpg" alt="car image 3">
+        </div>
+        <div class="car-img">
+          <img src="assets/images/4.jpg" alt="car image 4">
+        </div>
+        <div class="car-img">
+          <img src="assets/images/5.jpg" alt="car image 5">
+        </div>
+        <div class="car-img">
+          <img src="assets/images/6.jpg" alt="car image 6">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- js -->
+
+  <!-- jquery link -->
+  <script src="assets/js/jquery-3.7.1.min.js"></script>
+  <!-- slick link -->
+  <script src="assets/js/slick.min.js"></script>
+  <!-- particles js link -->
+  <script src="assets/js/particles.js"></script>
+
+  <!-- slick slider code -->
+  <script>
+    $(document).ready(function () {
+
+      $('.sliding').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              infinite: true,
+              dots: true
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+          // You can unslick at a given breakpoint now by adding:
+          // settings: "unslick"
+          // instead of a settings object
+        ]
+      });
+
+    })
+  </script>
+
+</body>
+
+</html>
